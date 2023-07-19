@@ -36,7 +36,10 @@ body {
 .header {
   align-self: stretch;
 }
-
+.link {
+  text-decoration: none;
+  color: inherit;
+}
 .header h1 {
   /* Non-accessible color */
   color: #edc84b;

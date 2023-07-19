@@ -153,7 +153,16 @@ function Order(props) {
       <p>
         We're open until {props.closeHour}:00 Come and Visit us or order online.
       </p>
-      <button className="btn">Order</button>
+      <button className="btn">
+        <a
+          rel="noreferrer"
+          target="_blank"
+          className="link"
+          href="mailto:harrison.munguambe17@gmail.com"
+        >
+          Order
+        </a>
+      </button>
     </div>
   );
 }
