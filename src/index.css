@@ -1,3 +1,4 @@
+/* Importação da fonte e estilos para tela grande (desktop) */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap");
 
 * {
@@ -188,3 +189,44 @@ SPACING SYSTEM (px)
 FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 /52 / 62 / 74 / 86 / 98
 */
+
+/* Media Queries para tornar a página responsiva */
+
+/* Estilos para telas menores (tablets e dispositivos móveis) */
+@media (max-width: 768px) {
+  body {
+    padding: 2.4rem; /* Reduzindo o espaçamento geral */
+    padding-bottom: 4.8rem; /* Reduzindo o espaçamento do rodapé */
+  }
+
+  .container {
+    gap: 2.4rem; /* Reduzindo o espaçamento entre os elementos */
+  }
+
+  .header h1 {
+    font-size: 4rem; /* Reduzindo o tamanho do título */
+  }
+
+  .menu h2 {
+    font-size: 2rem; /* Reduzindo o tamanho do subtítulo */
+  }
+
+  .menu > p {
+    font-size: 1.2rem; /* Reduzindo o tamanho do texto */
+    width: 100%; /* Ocupando a largura total da tela */
+  }
+
+  .pizzas {
+    grid-template-columns: 1fr; /* Uma coluna para as pizzas em telas menores */
+  }
+
+  .pizza img {
+    width: 100%; /* Imagens das pizzas ocupam a largura total */
+    max-width: 12rem; /* Limitando a largura máxima */
+  }
+
+  .btn {
+    font-size: 1.2rem; /* Reduzindo o tamanho do botão */
+    padding: 1.2rem 2.4rem; /* Reduzindo o espaçamento do botão */
+  }
+}
